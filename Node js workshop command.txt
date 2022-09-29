@@ -1,0 +1,57 @@
+my sql id: admin password: admin
+user root password admin
+
+-> cmd command
+node -v
+cd ..
+mkdir demoProject
+cd demoProject
+dir
+
+-> my sql connection
+\sql
+\connect root@localhost
+admin
+Y
+CREATE DATABASE cpiDemo;
+CREATE USER 'cpiDemo'@'localhost' IDENTIFIED WITH mysql_native_password BY 'cpiDemo';
+GRANT ALL PRIVILEGES ON cpiDemo. * TO 'cpiDemo'@'localhost';
+
+create table student(
+                                          -> id INT NOT NULL AUTO_INCREMENT,
+                                          -> name VARCHAR(100) NOT NULL,
+                                          -> address VARCHAR(100) NOT NULL,
+                                          -> phone INT NOT NULL,
+                                          -> email VARCHAR(100) NOT NULL,
+                                          -> password VARCHAR(100) NOT NULL,
+                                          -> PRIMARY KEY (id)
+                                          -> 
+			);
+
+desc student;
+SELECT * from student;
+
+-> node js npm command
+npm i express
+npm i --save cors
+npm i body-parser
+npm i --save mysql2
+npm website : https://npmjs.com/
+
+node index.js
+node database.js
+download postman
+
+
+
+
+
+
+
+
+
+
+
+
+
+
